@@ -94,23 +94,19 @@ export default {
 
         // Tiến hành lưu dữ liệu nếu mọi thứ hợp lệ
         try {
-            // (Tùy chọn) Xóa các đánh giá cũ của TeamID này nếu cần
-            // await deleteOldEvaluationsQuery.run({ teamId: appsmith.URL.queryParams.teamId });
+						await insertEvaluationDataQuery.run({ rows: evaluationsToInsert });
+						await updateTeamStatusQuery.run({ teamId: appsmith.URL.queryParams.teamId, isEvaluated: true }); // isEvaluated ở đây có thể dùng để chỉ team đó đã có người đánh giá, khác với trạng thái của từng cá nhân.
 
-            // Chèn các dòng đánh giá mới
-            await insertEvaluationDataQuery.run({ rows: evaluationsToInsert });
-            // Cập nhật trạng thái của Team là đã đánh giá
-            await updateTeamStatusQuery.run({ teamId: appsmith.URL.queryParams.teamId, isEvaluated: true });
+						showAlert('Đánh giá đã được lưu thành công!', 'success');
 
-            showAlert('Đánh giá đã được lưu thành công!', 'success');
-
-            // Điều hướng về trang Dashboard
-            // Không cần gọi getTeamsData.run() ở đây nếu trang Dashboard đã có "Run on page load" cho query đó.
-            navigateTo('TeamDashboardPage', {}, 'SAME_WINDOW');
+						// Điều hướng về trang Dashboard
+						navigateTo('TeamDashboardPage', {}, 'SAME_WINDOW');
 
         } catch (error) {
             console.error("Lỗi khi lưu đánh giá:", error);
             showAlert('Lỗi khi lưu đánh giá: ' + error.message, 'error');
         }
+			
+			
     }
 }

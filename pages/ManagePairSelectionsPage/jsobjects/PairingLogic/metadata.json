@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "682fffef4f524f28d5a2a2dc_167ac9d5-d399-4b32-a5cc-1527def57c93",
+  "id": "ManagePairSelectionsPage_PairingLogic",
+  "unpublishedCollection": {
+    "name": "PairingLogic",
+    "pageId": "ManagePairSelectionsPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

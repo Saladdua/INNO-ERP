@@ -44,7 +44,7 @@ export default {
 
                 showAlert('Đăng nhập thành công!', 'success');
                 // Điều hướng đến HomePage
-                navigateTo('HomePage', {}, 'SAME_WINDOW'); // SỬA Ở ĐÂY
+                navigateTo('Home', {}, 'SAME_WINDOW'); // SỬA Ở ĐÂY
             } else {
                 ErrorMessageText.setText("Email hoặc mật khẩu không đúng.");
             }
@@ -63,6 +63,7 @@ export default {
         await storeValue('currentUserRole', undefined);
         await storeValue('currentTeamID', undefined);
         navigateTo('LoginPage', {}, 'SAME_WINDOW');
+				showAlert('Đã đăng xuất thành công.', 'success');
     },
 	
 		checkManagerPageAccess: () => {
