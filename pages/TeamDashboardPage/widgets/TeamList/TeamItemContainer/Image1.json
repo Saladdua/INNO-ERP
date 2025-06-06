@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultImage": "https://www.freeiconspng.com/thumbs/edit-icon-png/edit-new-icon-22.png",
+  "displayName": "Image",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.69b0f0dd810281fbd6e34fc2c3f39344.svg",
+  "image": "{{currentItem.img}}",
+  "imageShape": "RECTANGLE",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "bhukyebd8e",
+  "leftColumn": 56,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 0,
+  "objectFit": "contain",
+  "onClick": "{{navigateTo('EvaluationFormPage', { teamId: currentItem.TeamID, teamName: currentItem.TeamName })}}",
+  "parentId": "hqx7620b0k",
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "tags": [
+    "Media"
+  ],
+  "topRow": 4,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "2nwkpro5uh",
+  "widgetName": "Image1"
+}

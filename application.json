@@ -1,0 +1,48 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#F1DEFF",
+  "evaluationVersion": 2,
+  "icon": "workflows",
+  "pages": [
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "EmployeePage",
+      "isDefault": false
+    },
+    {
+      "id": "ManagerPage",
+      "isDefault": false
+    },
+    {
+      "id": "TeamDashboardPage",
+      "isDefault": false
+    },
+    {
+      "id": "EvaluationFormPage",
+      "isDefault": false
+    },
+    {
+      "id": "DepartmentDetailsPage",
+      "isDefault": false
+    },
+    {
+      "id": "ManageTeamEvaluationsPage",
+      "isDefault": false
+    },
+    {
+      "id": "LoginPage",
+      "isDefault": false
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 85,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "ID_H_s_nh_n_s_",
+    "M_nh_n_s_",
+    "H_v_t_n",
+    "T_n_ng_nh_p",
+    "Ng_y_sinh",
+    "Ph_ng_ban",
+    "Ch_c_v_",
+    "Tr_ng_th_i",
+    "Ng_y_v_o",
+    "Email",
+    "S_i_n_tho_i",
+    "rowIndex",
+    "customColumn1"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.ID_H_s_nh_n_s_.computedValue"
+    },
+    {
+      "key": "primaryColumns.M_nh_n_s_.computedValue"
+    },
+    {
+      "key": "primaryColumns.H_v_t_n.computedValue"
+    },
+    {
+      "key": "primaryColumns.T_n_ng_nh_p.computedValue"
+    },
+    {
+      "key": "primaryColumns.Ng_y_sinh.computedValue"
+    },
+    {
+      "key": "primaryColumns.Ph_ng_ban.computedValue"
+    },
+    {
+      "key": "primaryColumns.Ch_c_v_.computedValue"
+    },
+    {
+      "key": "primaryColumns.Tr_ng_th_i.computedValue"
+    },
+    {
+      "key": "primaryColumns.Ng_y_v_o.computedValue"
+    },
+    {
+      "key": "primaryColumns.Email.computedValue"
+    },
+    {
+      "key": "primaryColumns.rowIndex.computedValue"
+    },
+    {
+      "key": "primaryColumns.S_i_n_tho_i.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": "true",
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "zba5qel0au",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "onPageChange": "{{SelectQuery.run()}}",
+  "onSearchTextChanged": "",
+  "onSort": "",
+  "parentColumnSpace": 16.3125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "Ch_c_v_": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Ch_c_v_))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Ch_c_v_",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Chức vụ",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Email": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Email))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Email",
+      "index": 9,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Email",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "H_v_t_n": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.H_v_t_n))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "H_v_t_n",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Họ và tên",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ID_H_s_nh_n_s_": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.ID_H_s_nh_n_s_))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "ID_H_s_nh_n_s_",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "ID",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "M_nh_n_s_": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.M_nh_n_s_))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "M_nh_n_s_",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Mã nhân sự",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Ng_y_sinh": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Ng_y_sinh))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Ng_y_sinh",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Ngày sinh",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Ng_y_v_o": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Ng_y_v_o))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Ng_y_v_o",
+      "index": 8,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Ngày vào",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Ph_ng_ban": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Ph_ng_ban))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Ph_ng_ban",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Phòng ban",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "S_i_n_tho_i": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( \n  (() => {\n    const phoneNumber = (currentRow.S_i_n_tho_i || \"\").toString();\n    return phoneNumber.startsWith('0') ? phoneNumber : \"0\" + phoneNumber;\n  })()\n))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "S_i_n_tho_i",
+      "index": 10,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Số điện thoại",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "T_n_ng_nh_p": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.T_n_ng_nh_p))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "T_n_ng_nh_p",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Tên đăng nhập",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Tr_ng_th_i": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.Tr_ng_th_i))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Tr_ng_th_i",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Trạng thái",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    },
+    "rowIndex": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "rowIndex",
+      "index": 11,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "rowIndex",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{SelectQuery.data}}",
+  "textSize": "0.875rem",
+  "topRow": 6,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "icx7cf3936",
+  "widgetName": "data_table"
+}

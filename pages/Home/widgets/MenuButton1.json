@@ -1,0 +1,110 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "configureMenuItems": {
+    "config": {
+      "id": "config",
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Menu Item"
+    },
+    "id": "config",
+    "label": "Configure menu items"
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3.onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "align-justify",
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xdz5mn0rwz",
+  "label": "Menu",
+  "leftColumn": 7,
+  "menuColor": "#b91c1c",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.currentUserRole !== \"LanhDao\"}}",
+      "label": "Thông Tin Nhân Sự",
+      "onClick": "{{navigateTo('EmployeePage', {}, 'SAME_WINDOW')}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": "{{appsmith.store.currentUserRole === \"LanhDao\"}}",
+      "label": "Quản Lý Nhân Sự",
+      "onClick": "{{navigateTo('ManagerPage', {}, 'SAME_WINDOW')}}",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Đánh Giá",
+      "onClick": "{{navigateTo('TeamDashboardPage', {}, 'SAME_WINDOW')}}",
+      "widgetId": ""
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "SECONDARY",
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 23,
+  "sourceData": [],
+  "topRow": 6,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "35xtdil7uj",
+  "widgetName": "MenuButton1"
+}

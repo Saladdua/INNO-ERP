@@ -1,0 +1,75 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n    (() => {\n        const loggedInTeamID = appsmith.store.currentTeamID;\n        if (!loggedInTeamID) return []; // Tránh lỗi nếu chưa có currentTeamID\n\n        const selectedPartners = [];\n        (getEvaluationPairs.data || []).forEach(pair => {\n            if (pair.TeamA_ID === loggedInTeamID) {\n                selectedPartners.push(pair.TeamB_ID);\n            } else if (pair.TeamB_ID === loggedInTeamID) {\n                selectedPartners.push(pair.TeamA_ID);\n            }\n        });\n        return selectedPartners;\n    })()\n))(MyPartnerSelector.options, MyPartnerSelector.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "2noa0bwazs",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Chọn các đội bạn muốn thiết lập đánh giá",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\n    PairingLogic.updateSelectionsForTeam(\n        appsmith.store.currentTeamID, // ID của đội hiện tại đang thực hiện lựa chọn\n        this.selectedOptionValues // Hoặc this.selectedValues cho Checkbox Group\n    )\n}}",
+  "optionLabel": "name",
+  "optionValue": "label",
+  "originalBottomRow": 22,
+  "originalTopRow": 15,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 22,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n    (getTeams.data || [])\n        .filter(team => team.TeamID !== appsmith.store.currentTeamID) // Lọc bỏ đội hiện tại\n        .map(team => ({ label: team.TeamName, value: team.TeamID }))\n}}",
+  "topRow": 14,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "y0snyk5q7c",
+  "widgetName": "MyPartnerSelector"
+}
