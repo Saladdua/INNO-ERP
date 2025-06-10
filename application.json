@@ -11,7 +11,7 @@
   "pages": [
     {
       "id": "Home",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "EmployeePage",
@@ -39,7 +39,7 @@
     },
     {
       "id": "LoginPage",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
