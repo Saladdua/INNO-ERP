@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "#f0f2f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 48,
+  "bottomRow": 55,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -142,7 +142,7 @@
     "Display"
   ],
   "templateHeight": 160,
-  "topRow": 1,
+  "topRow": 8,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "clph2mojbp",

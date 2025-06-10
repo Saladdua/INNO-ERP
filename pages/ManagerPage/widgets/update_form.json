@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 87,
+  "bottomRow": 94,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -562,7 +562,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row Id: {{data_table.selectedRow.rowIndex}}",
-  "topRow": 0,
+  "topRow": 7,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "tn9ri7ylp2",
